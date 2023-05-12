@@ -1,8 +1,7 @@
 import java.util.*;
-
 public class arithmeticCalculator {
     public static void main(String[] args) {
-           Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         // System.out.println("Enter the first value");
         // int a = sc.nextInt();
         // System.out.println("Enter the second value");
@@ -11,7 +10,7 @@ public class arithmeticCalculator {
         System.out.println("Enter the operator\n\n1.Add(+)\n2.Sub(-)\n3.Multiply(*)\n4.Divide(/)");
 
         String operator = sc.nextLine();
-        Arithmetic obj = new Arithmetic(5,5);
+        Arithmetic obj = new Arithmetic(10, 5);
         obj.setSecond_value(6);
         switch (operator) {
             case "+":
