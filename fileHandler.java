@@ -26,6 +26,15 @@ public class fileHandler {
         }
 
         try {
+            FileWriter fw = new FileWriter("file.txt",true);
+            fw.write(" are exciting");
+            fw.close();
+            System.out.println("Successfully appended to the file.");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        try {
             char[] array = new char[100];
             String name = "file.txt";
             FileReader input = new FileReader(name);

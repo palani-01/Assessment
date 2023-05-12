@@ -7,16 +7,17 @@ class longestIncreasingSubsequence {
         for (int x : arr) {
             int i = 0, j = size;
             while (i != j) {
-                int m = (i + j) / 2;
-                if (temp[m] < x)
-                    i = m + 1;
+                int middle = (i + j) / 2;
+                if (temp[middle] < x)
+                    i = middle + 1;
                 else
-                    j = m;
+                    j = middle;
             }
             temp[i] = x;
             if (i == size)
                 ++size;
         }
+        System.out.println("Length of the longest Increasing Subsequence");
         System.out.println(size);
     }
 }
