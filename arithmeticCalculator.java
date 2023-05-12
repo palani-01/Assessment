@@ -13,19 +13,20 @@ public class arithmeticCalculator {
         
 
         String operator = sc.nextLine();
+        Arithmetic obj = new Arithmetic();
         switch (operator) {
-            Arithmetic obj = new Arithmetic();
             case "+":
-                System.out.println("Sum of a & b: "+ obj.add);
+                System.out.println("Sum of a & b: "+ obj.add(a,b));
                 break;
             case "-":
-                System.out.println("Difference of a & b: " + obj.sub);
+
+                System.out.println("Difference of a & b: " + obj.sub(a,b));
                 break;
             case "*":
-                System.out.println("Product of a & b: " + obj.mul;
+                System.out.println("Product of a & b: " + obj.mul(a,b));
                 break;
             case "/":
-                System.out.println("Quotient of a by b: " + obj.div);
+                System.out.println("Quotient of a by b: " + obj.div(a,b));
                 break;
             default:
                 System.out.println("invalid option");
